@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/psravya-10/employee-service.git'
+                git branch: 'main', url: 'https://github.com/psravya-10/employee-service.git'
             }
         }
 
