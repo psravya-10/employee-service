@@ -3,4 +3,3 @@ WORKDIR /app
 COPY target/employee-service-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 9090
 ENTRYPOINT ["java","-jar","app.jar"]
-docker run -p 9090:9090 employee-service:1.0
